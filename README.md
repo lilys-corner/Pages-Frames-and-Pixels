@@ -1,6 +1,6 @@
 # Pages-Frames-and-Pixels
 
-Project that served as a format for a database of a fictional merchandise retail company based Los Angeles, California in the United States.
+Project that served as a format for a database of a fictional merchandise retail company based in Los Angeles, California in the United States.
 
 Excutive Summary of Business: 
 Pages, Frames & Pixels aims to provide a space for clients to purchase merchandise from their favorite series whether it be video games or shows in a manner that makes such purchases flawlessly easy. Users may sort by categories, series and products to find merchandise, then pay and have the merchandise sent to their location in a quick and easy-to-follow process.
