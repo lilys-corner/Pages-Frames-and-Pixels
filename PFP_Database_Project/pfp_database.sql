@@ -1,12 +1,11 @@
-CREATE DATABASE hschluter5172_db_PagesFramesAndPixels;
-USE hschluter5172_db_PagesFramesAndPixels;
+CREATE DATABASE qyu5069_db_PagesFramesAndPixels;
+USE qyu5069_db_PagesFramesAndPixels;
 
 CREATE OR REPLACE TABLE CREATOR(
     CRE_ID INT PRIMARY KEY,
     CRE_LNAME VARCHAR(30),
     CRE_FNAME VARCHAR(30)
 );
-DESCRIBE CREATOR;
 
 CREATE OR REPLACE TABLE COUNTRY(
     COUNTRY_ID INT PRIMARY KEY,
@@ -109,7 +108,7 @@ CREATE OR REPLACE TABLE MEMBERSHIP(
 );
 
 # INSERTION
-    
+
 INSERT INTO CREATOR VALUES (1, 'Cawthon', 'Scott'),
                            (2, 'Tajiri', 'Satoshi'),
                            (3, 'Haoyu', 'Cai'),
@@ -262,7 +261,7 @@ INSERT INTO `COUNTRY` VALUES
 (48,'Brazil'),
 (49,'Saint Barthelemy'),
 (50,'Tunisia'),
-(51,'Singapore'),
+(51,'Greenland'),
 (52,'Comoros'),
 (53,'Albania'),
 (54,'Bosnia and Herzegovina'),
