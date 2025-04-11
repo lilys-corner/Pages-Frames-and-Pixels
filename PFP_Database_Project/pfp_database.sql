@@ -1,6 +1,8 @@
 CREATE DATABASE qyu5069_db_PagesFramesAndPixels;
 USE qyu5069_db_PagesFramesAndPixels;
 
+
+
 CREATE OR REPLACE TABLE CREATOR(
     CRE_ID INT PRIMARY KEY,
     CRE_LNAME VARCHAR(30),
@@ -226,7 +228,7 @@ INSERT INTO `COUNTRY` VALUES
 (13,'Montenegro'),
 (14,'Ethiopia'),
 (15,'Portugal'),
-(16,'Canada'),
+(16,'Mexico'),
 (17,'India'),
 (18,'Antigua and Barbuda'),
 (19,'Lithuania'),
