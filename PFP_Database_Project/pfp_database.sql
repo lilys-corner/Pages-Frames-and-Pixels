@@ -154,7 +154,7 @@ INSERT INTO PRODUCT VALUES (1, 'Freddy Fazbear Mini', 500, 11.99, 'Home', 1, 3),
 
 INSERT INTO PLUSH VALUES (2, 'Polyester'),
                          (4, 'Faux fur'),
-                         (5, 'Polyester')
+                         (5, 'Polyester'),
                          (11, 'Polyester'),
                          (12, 'Polyester');
 
