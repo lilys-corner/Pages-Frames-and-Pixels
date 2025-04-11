@@ -64,17 +64,16 @@ CREATE OR REPLACE TABLE HOME(
     FOREIGN KEY (PROD_ID) REFERENCES PRODUCT(PROD_ID)
 );
 
-CREATE OR REPLACE TABLE CUSTOMER(
-    CUS_ID INT PRIMARY KEY,
-    CUS_FNAME VARCHAR(30),
-    CUS_LNAME VARCHAR(30),
-    CUS_EMAIL VARCHAR(30),
-    CUS_PHONE CHAR(12),
-    CUS_ADR VARCHAR(30),
-    CUS_STATE VARCHAR(30),
-    CUS_COUNTRY VARCHAR(30),
-    MEM_STATUS VARCHAR(30)
-    );
+INSERT INTO CUSTOMER VALUES (1, 'James', 'Anderson', 'janderson@gmail.com', '941-221-4900',
+                             '2000 Address Drive', 'AZ', 'United States', 1),
+                            (2, 'Priscilla', 'Bass', 'pbass01@gmail.com', '941-300-3210',
+                             '193 This Road', 'FL', 'United States', 1),
+                            (3, 'Jorja', 'Driscoll', 'jdriscoll@gmail.com', '405-304-8436',
+                             '1404 James Street', 'PA', 'United States', 1),
+                            (4, 'Poppy', 'Verco', 'poppyj1200@gmail.com', '585-109-3941',
+                             '1431 Walt Farm Road', 'WA', 'United States', 1),
+                            (5, 'Lorenzo', 'Huff', 'ljhuff@gmail.com', '907-730-0135',
+                             '1271 Timbernest Street', 'AK', 'United States', 1);
 
 CREATE OR REPLACE TABLE INVOICE(
     INV_ID INT PRIMARY KEY,
