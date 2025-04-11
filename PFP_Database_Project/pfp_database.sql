@@ -1,6 +1,5 @@
 CREATE DATABASE hschluter5172_db_PagesFramesAndPixels;
 USE hschluter5172_db_PagesFramesAndPixels;
-DROP TABLE *;
 
 CREATE OR REPLACE TABLE CREATOR(
     CRE_ID INT PRIMARY KEY,
