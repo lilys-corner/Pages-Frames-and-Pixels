@@ -990,6 +990,10 @@ SELECT INV_ID, INV_DATE, INV_TOTAL FROM INVOICE JOIN CUSTOMER C ON INVOICE.CUS_I
     WHERE CUS_FNAME = 'James' AND CUS_LNAME = 'Anderson' AND INV_DATE = '2019-02-17';
 
 -- Output of sql query to show a current inventory of all products sold within a date range, also include SQL code
+SELECT P.PROD_ID, PROD_NAME, PROD_TYPE, I.INV_DATE FROM INVOICE I
+    JOIN LINE L ON I.INV_ID = L.INV_ID
+    JOIN PRODUCT P ON L.PROD_ID = P.PROD_ID
+    WHERE INV_DATE BETWEEN '2019-01-10' AND '2019-10-09' ORDER BY P.PROD_ID, I.INV_DATE;
 
 -- Output of sql query to show a current inventory of all products that match one specific product type, also include SQL cod
 SELECT * FROM PRODUCT LIMIT 15;
@@ -997,6 +1001,12 @@ SELECT PROD_ID, PROD_NAME, PROD_QOH, PROD_PRICE FROM PRODUCT WHERE PROD_TYPE = '
 
 -- Output of sql stored procedure that allows user to pass in a value and in order to join two tables to produce 
 -- an output (you decide the attributes), also include SQL code
+CREATE OR REPLACE PROCEDURE FIND_CUST(MEMBER INT)
+BEGIN
+    SELECT MEM_TYPE, CUS_FNAME, CUS_LNAME FROM MEMBERSHIP M JOIN CUSTOMER C
+                                          ON MEM_ID = MEMBER AND M.CUS_ID = C.CUS_ID;
+END;
+CALL FIND_CUST(3);
 
 -- SQL code used to insert new product into product table (show all attributes)
 INSERT INTO PRODUCT VALUES (101, 'Fairy Type Blanket', 50, 29.99,
@@ -1017,12 +1027,30 @@ SELECT * FROM FNAF_MERCH;
 
 /*Output of sql query that demonstrates a frequency distribution of customers who 
 purchased items that cost more than $99.99. Order by price of purchased item in descending */
+SELECT COUNT(*) AS 'Customer Purchases', PROD_PRICE AS 'Product Price' FROM LINE L
+    JOIN PRODUCT P ON L.PROD_ID = P.PROD_ID
+    WHERE P.PROD_PRICE > 99.99 GROUP BY P.PROD_PRICE ORDER BY P.PROD_PRICE DESC;
 
 -- SQL code to demonstrate a sub query with arithmetic operations and aliases.
+SELECT CUS_ID, CUS_FNAME, CUS_LNAME,
+       (SELECT SUM(DISTINCT INV_TOTAL) FROM INVOICE I JOIN CUSTOMER C ON I.CUS_ID = C.CUS_ID
+       WHERE C.CUS_ID = 60) AS 'Total Spent' FROM CUSTOMER WHERE CUS_ID = 60;
 
 /*SQL code that joins five (5) tables and returns rows that match multiple conditions using Boolean. 
 Display any column you decide. Analyze the time to run the query, then add an index (or composite index). 
 Re-analyze the time for the query to determine if improvements were made. Show your results*/
+SELECT C.CUS_ID, CUS_FNAME, CUS_LNAME, S.SERIES_ID, SERIES_NAME, SERIES_TYPE, SERIES_GENRE,
+       COUNT(DISTINCT L.LINE_ID) AS 'Number of Purchases' FROM CUSTOMER C
+       JOIN INVOICE I ON C.CUS_ID = I.CUS_ID JOIN LINE L ON I.INV_ID = L.INV_ID
+       JOIN PRODUCT P ON L.PROD_ID = P.PROD_ID
+       JOIN SERIES S ON P.SERIES_ID = S.SERIES_ID WHERE C.CUS_ID = 1 GROUP BY S.SERIES_ID;
+
+CREATE INDEX IDENTITY ON CUSTOMER(CUS_ID);
+SELECT C.CUS_ID, CUS_FNAME, CUS_LNAME, S.SERIES_ID, SERIES_NAME, SERIES_TYPE, SERIES_GENRE,
+       COUNT(DISTINCT L.LINE_ID) AS 'Number of Purchases' FROM CUSTOMER C USE INDEX (IDENTITY)
+       JOIN INVOICE I ON C.CUS_ID = I.CUS_ID JOIN LINE L ON I.INV_ID = L.INV_ID
+       JOIN PRODUCT P ON L.PROD_ID = P.PROD_ID
+       JOIN SERIES S ON P.SERIES_ID = S.SERIES_ID WHERE C.CUS_ID = 1 GROUP BY S.SERIES_ID;
 
 -- Show data dictionary of tables (see fig 1)
 SELECT table_name, column_name, column_type, is_nullable,column_comment
