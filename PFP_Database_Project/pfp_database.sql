@@ -1,8 +1,6 @@
 CREATE DATABASE qyu5069_db_PagesFramesAndPixels;
 USE qyu5069_db_PagesFramesAndPixels;
 
-
-
 CREATE OR REPLACE TABLE CREATOR(
     CRE_ID INT PRIMARY KEY,
     CRE_LNAME VARCHAR(30),
@@ -800,3 +798,233 @@ INSERT INTO `INVOICE` VALUES
 (98,'2001-11-06',606.85,64),
 (99,'2015-03-30',820.37,77),
 (100,'2018-12-10',165.70,92);
+
+INSERT INTO PRODUCT VALUES
+(16,'Earum aperiam voluptas aliquam',347,54.37,'veniam',95,8),
+(17,'Autem eum provident eligendi f',150,68.13,'est',34,65),
+(18,'Sit sunt mollitia quos rerum n',409,182.95,'praesentium',26,20),
+(19,'Non aspernatur sed voluptatem ',336,197.59,'nemo',17,75),
+(20,'Saepe quos sunt provident.',188,114.16,'et',89,62),
+(21,'Expedita omnis dignissimos mod',452,232.69,'nemo',22,94),
+(22,'Eum id unde qui autem.',282,628.35,'et',6,65),
+(23,'Non voluptatem est velit sed.',258,653.91,'totam',100,90),
+(24,'Tempore sunt consequatur ea eu',223,240.68,'sed',81,66),
+(25,'Consequatur molestiae mollitia',360,507.33,'dolorum',50,47),
+(26,'Aut eveniet fugiat voluptatum ',341,835.90,'consequuntur',6,32),
+(27,'Quia quam unde accusamus quaer',322,78.04,'aut',18,32),
+(28,'Omnis suscipit ducimus volupta',402,55.85,'rerum',91,38),
+(29,'Quia maxime ab sit ut omnis.',195,208.92,'velit',30,58),
+(30,'Sapiente placeat quis facere q',317,271.94,'et',44,27),
+(31,'Odit aut corporis fugiat et a ',372,299.66,'aut',87,49),
+(32,'Voluptas qui aliquam necessita',241,61.00,'fugit',21,53),
+(33,'Tempore voluptatem quam quaera',464,631.43,'cumque',84,62),
+(34,'Dicta amet quo molestiae conse',56,630.67,'delectus',27,82),
+(35,'Quasi inventore numquam reicie',392,346.19,'repellat',58,27),
+(36,'Repellendus vero quisquam dele',324,710.43,'provident',37,62),
+(37,'Deserunt quasi dolor corporis ',126,670.87,'inventore',38,78),
+(38,'Nesciunt provident sed placeat',429,343.58,'quae',67,15),
+(39,'Ex ipsum harum maxime dignissi',105,98.03,'consequatur',18,10),
+(40,'Aspernatur voluptates atque re',276,296.53,'fugit',39,34),
+(41,'Est asperiores ea voluptatem c',463,921.35,'consequatur',66,93),
+(42,'Mollitia exercitationem est ea',71,901.79,'accusantium',15,100),
+(43,'Repellat deserunt voluptate ve',89,309.59,'nulla',6,34),
+(44,'Consequuntur aut quia consecte',389,852.53,'eos',35,59),
+(45,'Eaque omnis mollitia aut est.',68,899.43,'nulla',50,50),
+(46,'Numquam molestiae quis tempore',159,569.80,'sequi',86,58),
+(47,'Non sint dolorem facere.',245,884.03,'quasi',67,25),
+(48,'Est dolor ab voluptatem cumque',432,302.97,'et',14,97),
+(49,'Nemo ullam voluptatum mollitia',301,502.82,'magni',60,98),
+(50,'Et sunt explicabo fuga omnis.',250,609.63,'rerum',21,45);
+INSERT INTO PRODUCT VALUES
+(51,'Est expedita temporibus qui ne',246,121.44,'possimus',32,7),
+(52,'Officia et qui esse.',472,544.09,'fuga',53,97),
+(53,'Sint in aliquid fugit odit.',280,487.04,'aliquid',52,47),
+(54,'Numquam a ut incidunt vel.',91,575.77,'deleniti',78,86),
+(55,'Fugiat vel dicta et voluptatem',319,143.55,'expedita',51,41),
+(56,'Laboriosam quia consequatur ad',381,499.73,'eum',18,94),
+(57,'Voluptate ea voluptas molestia',306,380.21,'hic',91,97),
+(58,'Hic sed laboriosam est aut lab',158,914.57,'non',45,44),
+(59,'Deleniti possimus dolorum reic',157,427.91,'eaque',80,46),
+(60,'Delectus porro neque quis faci',369,73.41,'quia',13,63),
+(61,'Odio et quis voluptatem aut.',226,222.37,'perspiciatis',13,8),
+(62,'Quo est est facilis officiis i',260,408.98,'quia',22,65),
+(63,'Dolores nulla officia dolorem ',57,177.19,'optio',99,99),
+(64,'Vel aut amet eum nulla.',448,518.08,'incidunt',38,88),
+(65,'Nihil in possimus voluptates e',467,362.50,'eveniet',81,38),
+(66,'Officiis eveniet laudantium et',13,127.35,'ex',35,40),
+(67,'Sunt repellendus necessitatibu',451,878.39,'nihil',58,22),
+(68,'Neque quis libero officiis est',49,962.73,'commodi',58,29),
+(69,'Sint accusantium eveniet verit',303,689.48,'ea',24,99),
+(70,'Aut consequatur fugit rerum do',415,571.42,'quae',65,46),
+(71,'Officiis exercitationem dolor ',284,265.94,'rerum',56,72),
+(72,'Velit inventore et magni provi',64,790.56,'saepe',24,57),
+(73,'Tempore omnis sit at.',344,265.73,'modi',39,29),
+(74,'Reprehenderit eligendi iste do',158,343.99,'et',47,49),
+(75,'Voluptate animi labore delectu',256,286.88,'sequi',53,34),
+(76,'Quod ullam odio mollitia quod ',277,355.98,'accusamus',28,7),
+(77,'Consequuntur quaerat qui aliqu',153,921.86,'maxime',10,97),
+(78,'Dolores nulla blanditiis rem.',343,470.06,'sed',30,48),
+(79,'Aut neque eligendi modi at aut',206,509.54,'non',25,52),
+(80,'Et quia ipsum laborum repudian',45,362.30,'dolor',98,37),
+(81,'Quo repudiandae ut qui consequ',47,735.23,'fuga',80,98),
+(82,'Iste reprehenderit quidem erro',436,944.30,'facere',81,58),
+(83,'Aliquam beatae velit earum pra',364,660.20,'molestias',25,37),
+(84,'Qui suscipit voluptas error do',67,913.58,'tempore',31,19),
+(85,'Provident atque incidunt fuga.',484,978.33,'et',19,59),
+(86,'Omnis omnis eum voluptatem vol',302,120.68,'non',53,73),
+(87,'Nulla eos temporibus quaerat a',23,701.88,'animi',49,67),
+(88,'Velit dolore qui non deserunt ',378,829.81,'rerum',92,71),
+(89,'In qui eius iste blanditiis.',453,566.10,'perferendis',31,87),
+(90,'Voluptatem nihil error dolorem',206,621.84,'dolor',29,22),
+(91,'Dolor voluptatem et iure.',448,86.10,'ullam',43,73),
+(92,'Facilis velit dolores pariatur',288,734.70,'cumque',57,68),
+(93,'Eum labore laborum enim aliqui',415,111.74,'molestiae',36,50),
+(94,'Asperiores non nisi ullam rem ',71,886.98,'hic',50,54),
+(95,'Molestiae nobis neque sequi la',188,521.58,'et',14,75),
+(96,'Et ea sit sint harum est omnis',407,850.71,'quidem',78,25),
+(97,'Quod eligendi occaecati ab in ',401,966.79,'ut',100,53),
+(98,'Quisquam minus enim perspiciat',120,387.68,'incidunt',42,38),
+(99,'Est eius et et dicta et.',198,900.24,'ut',17,11),
+(100,'Nesciunt voluptatem et id et s',5,643.99,'dolorem',33,22);
+
+INSERT INTO `LINE` VALUES
+(6,60,86,180,201.41),
+(7,47,38,216,705.92),
+(8,82,39,10,556.12),
+(9,88,69,236,4.28),
+(10,51,49,174,894.87),
+(11,78,73,200,795.91),
+(12,50,38,252,859.78),
+(13,91,77,289,721.90),
+(14,74,86,28,133.33),
+(15,11,46,214,80.67),
+(16,44,65,30,24.17),
+(17,52,29,116,371.05),
+(18,95,25,33,491.06),
+(19,54,91,69,433.72),
+(20,79,83,194,564.31),
+(21,96,43,59,328.30),
+(22,71,68,105,315.72),
+(23,93,73,265,76.17),
+(24,70,23,25,69.55),
+(25,87,77,216,224.03),
+(26,82,32,250,386.79),
+(27,21,47,145,570.20),
+(28,98,47,87,967.68),
+(29,49,22,275,398.24),
+(30,37,57,70,504.40),
+(31,65,44,210,608.73),
+(32,70,68,204,12.06),
+(33,61,18,274,885.48),
+(34,58,47,44,881.95),
+(35,51,48,148,904.35),
+(36,77,79,241,860.55),
+(37,88,18,139,846.62),
+(38,14,59,124,421.24),
+(39,94,26,27,263.16),
+(40,49,16,232,886.12),
+(41,19,20,53,753.21),
+(42,98,80,211,684.72),
+(43,12,86,143,799.80),
+(44,61,38,111,596.89),
+(45,17,42,38,376.79),
+(46,82,63,122,677.29),
+(47,63,86,224,384.43),
+(48,25,70,246,905.57),
+(49,70,87,269,231.09),
+(50,25,84,90,728.06),
+(51,89,22,191,580.89),
+(52,79,58,40,666.68),
+(53,9,86,180,575.12),
+(54,52,64,300,931.60),
+(55,98,67,194,545.43),
+(56,56,37,248,453.31),
+(57,82,48,191,664.58),
+(58,92,54,219,865.24),
+(59,19,72,11,988.97),
+(60,46,37,88,330.46),
+(61,77,66,285,399.74),
+(62,65,81,285,296.33),
+(63,69,67,227,938.88),
+(64,56,57,5,424.61),
+(65,27,54,61,924.32),
+(66,82,98,208,16.24),
+(67,6,84,126,129.16),
+(68,32,22,185,546.19),
+(69,9,24,40,144.86),
+(70,53,94,298,971.93),
+(71,8,25,197,376.86),
+(72,34,51,222,141.64),
+(73,80,98,86,798.54),
+(74,98,60,184,925.40),
+(75,11,93,196,895.66),
+(76,9,65,48,489.92),
+(77,82,30,293,199.66),
+(78,23,79,288,785.99),
+(79,83,30,79,788.18),
+(80,63,49,120,855.71),
+(81,80,100,272,27.94),
+(82,31,93,285,364.19),
+(83,85,65,135,38.50),
+(84,33,71,141,845.57),
+(85,89,89,163,537.92),
+(86,61,81,165,312.60),
+(87,72,27,272,371.70),
+(88,75,85,59,347.21),
+(89,50,40,108,247.59),
+(90,95,55,57,365.94),
+(91,10,67,104,973.21),
+(92,6,66,100,298.13),
+(93,88,75,226,108.93),
+(94,98,91,207,543.16),
+(95,11,24,126,361.30),
+(96,43,51,58,224.88),
+(97,43,20,180,210.90),
+(98,98,50,193,491.28),
+(99,100,89,156,718.37),
+(100,80,90,101,411.11);
+
+-- Output of a sql query to show a specific invoice based on a customer name and date of purchase, also include SQL code
+SELECT * FROM CUSTOMER LIMIT 5;
+SELECT INV_ID, INV_DATE, INV_TOTAL FROM INVOICE JOIN CUSTOMER C ON INVOICE.CUS_ID = C.CUS_ID
+    WHERE CUS_FNAME = 'James' AND CUS_LNAME = 'Anderson' AND INV_DATE = '2019-02-17';
+
+-- Output of sql query to show a current inventory of all products sold within a date range, also include SQL code
+
+-- Output of sql query to show a current inventory of all products that match one specific product type, also include SQL cod
+SELECT * FROM PRODUCT LIMIT 15;
+SELECT PROD_ID, PROD_NAME, PROD_QOH, PROD_PRICE FROM PRODUCT WHERE PROD_TYPE = 'Plush';
+
+-- Output of sql stored procedure that allows user to pass in a value and in order to join two tables to produce 
+-- an output (you decide the attributes), also include SQL code
+
+-- SQL code used to insert new product into product table (show all attributes)
+INSERT INTO PRODUCT VALUES (101, 'Fairy Type Blanket', 50, 29.99,
+                            'Home', 2, 6);
+SELECT * FROM PRODUCT where PROD_ID = 101;
+
+-- SQL code to generate a new invoice, you decide product and customer information
+INSERT INTO INVOICE VALUES (101, '2023-04-11', 19.87, 4);
+SELECT * FROM INVOICE WHERE INV_ID = 101;
+INSERT INTO LINE VALUES (5, 101, 2, 1, 19.87);
+SELECT * FROM LINE;
+
+-- Output of a virtual table (of your choice), also include SQL code
+SELECT * FROM PRODUCT;
+SELECT * FROM SERIES;
+CREATE VIEW FNAF_MERCH AS SELECT PROD_ID, PROD_NAME, PROD_PRICE, PROD_QOH FROM PRODUCT WHERE SERIES_ID = 1;
+SELECT * FROM FNAF_MERCH;
+
+/*Output of sql query that demonstrates a frequency distribution of customers who 
+purchased items that cost more than $99.99. Order by price of purchased item in descending */
+
+-- SQL code to demonstrate a sub query with arithmetic operations and aliases.
+
+/*SQL code that joins five (5) tables and returns rows that match multiple conditions using Boolean. 
+Display any column you decide. Analyze the time to run the query, then add an index (or composite index). 
+Re-analyze the time for the query to determine if improvements were made. Show your results*/
+
+-- Show data dictionary of tables (see fig 1)
+SELECT table_name, column_name, column_type, is_nullable,column_comment
+FROM information_schema.COLUMNS
+WHERE table_schema = 'qyu5069_db_PagesFramesAndPixels' ORDER BY table_name, ordinal_position ASC;
