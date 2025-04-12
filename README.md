@@ -25,7 +25,7 @@ Constraints and Defined Objectives:
 Key Business Rules:
 - (WIP)
 
-Pages, Frames, and Pixels Entity Relationships: 
+Pages, Frames, and Pixels Entity Relationships: [ERD](https://github.com/user-attachments/assets/1c85c11c-9b72-432d-8200-02d27396776f)
 
 The Biggest Challenges:
 - (WIP)
