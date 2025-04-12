@@ -20,10 +20,11 @@ Constraints and Defined Objectives:
 - SERIES_ID and PRODUCT_ID
 
 Key Business Rules:
-- One customer can purchase one membership
-- One customer can make many orders
-- One product can be either plush, accessory, or home
-- One creator can create many series
+- One customer may purchase one membership
+- One customer may make many orders
+- One product is either a plush, an accessory, or a home item
+- One creator must create at least one series
+
 
 Pages, Frames, and Pixels Entity Relationships: [ERD](https://github.com/user-attachments/assets/1c85c11c-9b72-432d-8200-02d27396776f)
 
