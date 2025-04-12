@@ -34,6 +34,6 @@ The Biggest Challenges:
 
 Summary of Database Solution:
 - Utilized Product table as the base of the database
-- Product allowed connectio between suppliers/vendors and customers
+- Product allowed connection between suppliers/vendors and customers
 - Product is a supertype for three types of items sold: plush, accessory, and home
 - Series allowed connection to product from creators and country
