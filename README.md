@@ -25,7 +25,6 @@ Key Business Rules:
 - One product is either a plush, an accessory, or a home item
 - One creator must create at least one series
 
-
 Pages, Frames, and Pixels Entity Relationships: [ERD](https://github.com/user-attachments/assets/1c85c11c-9b72-432d-8200-02d27396776f)
 
 The Biggest Challenges:
@@ -33,7 +32,7 @@ The Biggest Challenges:
 - Not overcomplicating the structure
 
 Summary of Database Solution:
-- Utilized Product table as the base of the database
+- Utilized Product table as the central point of the database
 - Product allowed connection between suppliers/vendors and customers
 - Product is a supertype for three types of items sold: plush, accessory, and home
 - Series allowed connection to product from creators and country
